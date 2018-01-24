@@ -8,7 +8,7 @@ const addLineNumberSpans = R.map(
   code => `<span class="line-numbered">${code}</span>`
 )
 
-const swapTest = /<span class="line-numbered"><\/span>/g
+const swapTest = /^<span class="line-numbered"><\/span>/g
 const swapReplace = '</span><span class="line-numbered>'
 const swapSpanClosingTags = R.map(R.replace(swapTest, swapReplace))
 
@@ -17,7 +17,8 @@ const orphanReplace = ''
 const replaceOrphans = R.map(R.replace(orphanTest, orphanReplace))
 
 const combineTest = /<span class="line-numbered"><span class="gatsby-highlight-code-line">(.*)<\/span>$/g
-const combineReplace = '<span class="gatsby-highlight-code-line line-numbered">$1'
+const combineReplace =
+  '<span class="gatsby-highlight-code-line line-numbered">$1'
 const combineSpans = R.map(R.replace(combineTest, combineReplace))
 
 const addLineNumbers = R.pipe(
