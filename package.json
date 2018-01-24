@@ -1,0 +1,25 @@
+{
+  "name": "gatsby-remark-line-numbering",
+  "version": "0.0.1",
+  "description": "Adds line numbering to markdown code blocks",
+  "main": "index.js",
+  "repository": "git@github.com:chasm/gatsby-remark-line-numbering.git",
+  "author": "Charles F. Munat <chas@munat.com>",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "remark",
+    "line numbering"
+  ],
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "ramda": "^0.25.0",
+    "unist-util-visit": "^1.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "cross-env": "^5.1.3"
+  }
+}
