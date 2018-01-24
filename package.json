@@ -1,6 +1,6 @@
 {
   "name": "gatsby-remark-line-numbering",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Adds line numbering to markdown code blocks",
   "main": "index.js",
   "repository": "git@github.com:chasm/gatsby-remark-line-numbering.git",
