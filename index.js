@@ -9,7 +9,7 @@ const addLineNumberSpans = R.map(
 )
 
 const swapTest = /^<span class="line-numbered"><\/span>/g
-const swapReplace = '</span><span class="line-numbered>'
+const swapReplace = '</span><span class="line-numbered">'
 const swapSpanClosingTags = R.map(R.replace(swapTest, swapReplace))
 
 const orphanTest = /^<\/span><span class="line-numbered">$/
