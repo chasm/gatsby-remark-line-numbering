@@ -22,3 +22,29 @@ plugins: [
     ]
   }
 ]
+```
+
+You'll want to add some CSS for your line numbers, for example:
+
+```css
+pre {
+  counter-reset: line;
+}
+
+.line-numbered {
+  counter-increment: line;
+  line-height: 1.5;
+}
+
+.line-numbered::before {
+  content: counter(line);
+  display: inline-block;
+  width: 2.5em;
+  border-right: 1px solid #ddd;
+  padding: 0 0.5em 0 0;
+  margin-right: 0.5em;
+  color: #888;
+  text-align: right;
+  -webkit-user-select: none;
+}
+```

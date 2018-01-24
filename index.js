@@ -27,6 +27,7 @@ const addLineNumbers = R.pipe(
   swapSpanClosingTags,
   replaceOrphans,
   combineSpans,
+  R.reject(R.isEmpty),
   R.join('\n')
 )
 
