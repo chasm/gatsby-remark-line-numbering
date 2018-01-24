@@ -41,7 +41,7 @@ module.exports = function ({ markdownAST }) {
     if (inner) {
       const updated = R.trim(addLineNumbers(inner))
 
-      node.value = `${pre}${updated}${post}`
+      node.value = `${pre}<code>${updated}</code>${post}`
     }
   })
 
