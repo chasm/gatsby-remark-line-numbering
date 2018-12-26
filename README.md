@@ -1,5 +1,7 @@
 # gatsby-remark-line-numbering
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/chasm/gatsby-remark-line-numbering.svg)](https://greenkeeper.io/)
+
 Add line numbering to markdown code blocks.
 
 ## Install
